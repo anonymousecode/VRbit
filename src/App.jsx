@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Earth from './components/earth'
+import Earth from './components/earth.jsx'
 import './App.css'
 
 function App() {
