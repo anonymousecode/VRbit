@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function Earth() {
+export default function Mercury() {
   const [aframeReady, setAframeReady] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
 
@@ -46,9 +46,10 @@ export default function Earth() {
           id="earth"
           position="0 1 -3"
           radius="4"
-          src="/images/earth-texture.jpg"
+          src="/images/mercury-texture.jpg"
           rotation="0 0 0"
-          animation="property: rotation; to: 0 360 0; loop: true; dur: 35000; easing: linear"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 20000; easing: linear"
+
         ></a-sphere>
 
         <a-light type="ambient" intensity="0.6"></a-light>
@@ -117,18 +118,20 @@ export default function Earth() {
             &times;
           </button>
 
-          <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>About Earth</h1>
-          <p style={{ maxWidth: '700px', textAlign: 'center', fontSize: '1.3rem' }}>
-            Earth is the third planet from the Sun and the only astronomical object known to harbor life.
-            Its surface is 71% water, with an atmosphere composed mostly of nitrogen and oxygen.
-            Earth revolves around the Sun every 365.25 days and has one natural satellite — the Moon.
-          </p>
-          <ul style={{ marginTop: '2rem', fontSize: '1.1rem', listStyle: 'none' }}>
-            <li><strong>Diameter:</strong> 12,742 km</li>
-            <li><strong>Distance from Sun:</strong> 149.6 million km</li>
-            <li><strong>Orbital Period:</strong> 365.25 days</li>
-            <li><strong>Satellite:</strong> The Moon</li>
-          </ul>
+          <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>About Mercury</h1>
+            <p style={{ maxWidth: '700px', textAlign: 'center', fontSize: '1.3rem' }}>
+            Mercury is the closest planet to the Sun and the smallest in our solar system.
+            It has a rocky surface covered with craters and experiences extreme temperatures due to its thin atmosphere.
+            Despite being so close to the Sun, it is not the hottest planet—Venus holds that title.
+            </p>
+            <ul style={{ marginTop: '2rem', fontSize: '1.1rem', listStyle: 'none' }}>
+            <li><strong>Diameter:</strong> 4,879 km</li>
+            <li><strong>Distance from Sun:</strong> 57.9 million km</li>
+            <li><strong>Orbital Period:</strong> 88 Earth days</li>
+            <li><strong>Satellites:</strong> None</li>
+            </ul>
+
+
         </div>
       )}
     </div>
