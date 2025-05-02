@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function Earth() {
+export default function Saturn() {
   const [aframeReady, setAframeReady] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
 
@@ -24,7 +24,7 @@ export default function Earth() {
     }
   }, []);
 
-  if (!aframeReady) return <p>Loading 3D scene...</p>;
+  if (!aframeReady) return <p>Loading Planets...</p>;
 
   return (
     <div style={{ position: 'relative', width: '100vw', height: '100vh', overflow: 'hidden' }}>
@@ -46,9 +46,9 @@ export default function Earth() {
           id="earth"
           position="0 1 -3"
           radius="4"
-          src="/images/earth-texture.jpg"
+          src="/images/neptune-texture.jpg"
           rotation="0 0 0"
-          animation="property: rotation; to: 0 360 0; loop: true; dur: 35000; easing: linear"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear"
         ></a-sphere>
 
         <a-light type="ambient" intensity="0.6"></a-light>
@@ -117,18 +117,20 @@ export default function Earth() {
             &times;
           </button>
 
-          <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>About Earth</h1>
-          <p style={{ maxWidth: '700px', textAlign: 'center', fontSize: '1.3rem' }}>
-            Earth is the third planet from the Sun and the only astronomical object known to harbor life.
-            Its surface is 71% water, with an atmosphere composed mostly of nitrogen and oxygen.
-            Earth revolves around the Sun every 365.25 days and has one natural satellite — the Moon.
-          </p>
-          <ul style={{ marginTop: '2rem', fontSize: '1.1rem', listStyle: 'none' }}>
-            <li><strong>Diameter:</strong> 12,742 km</li>
-            <li><strong>Distance from Sun:</strong> 149.6 million km</li>
-            <li><strong>Orbital Period:</strong> 365.25 days</li>
-            <li><strong>Satellite:</strong> The Moon</li>
-          </ul>
+          <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>About Neptune</h1>
+            <p style={{ maxWidth: '700px', textAlign: 'center', fontSize: '1.3rem' }}>
+            Neptune is the eighth and farthest planet from the Sun in our solar system. It is an ice giant with a composition similar to Uranus, consisting mostly of hydrogen, helium, and ices like water, ammonia, and methane.
+            Neptune is known for its striking blue color, caused by methane in its atmosphere, and its intense winds, which are the fastest in the solar system.
+            The planet also has a series of rings and 14 known moons, with Triton being the largest.
+            </p>
+            <ul style={{ marginTop: '2rem', fontSize: '1.1rem', listStyle: 'none' }}>
+            <li><strong>Diameter:</strong> 49,244 km</li>
+            <li><strong>Distance from Sun:</strong> 4.495 billion km</li>
+            <li><strong>Orbital Period:</strong> 164.8 Earth years</li>
+            <li><strong>Satellites:</strong> 14 known moons (including Triton, Nereid)</li>
+            </ul>
+
+
         </div>
       )}
     </div>
